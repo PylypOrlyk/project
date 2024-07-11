@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escort</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header id="header">
+
+        <div class="bottom-header">
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+                <i class='bx bx-menu-alt-left' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+            </label>
+            <div class="navbar">
+                <a href="" class="nav-link">Link</a>
+                <a href="" class="nav-link">Link</a>
+                <a href="" class="nav-link">Link</a>
+            </div>
+        </div>
+    
+        <div class="book-time">
+            <a href="tel:440123457895" class="phone-icon">
+                <i class='bx bxs-phone'></i>
+            </a>
+            <div class="book-time-title-tel">
+                <h6 class="book-time-title">Book a time</h6>
+                <a href="tel:440123457895" class="tel">44 (01) 2345 7895a</a>
+            </div>
+        </div>
+
+        <button class="book-me-now-button" onclick="togglePopup()">BOOK ME NOW <i class='bx bx-chevron-right'></i></button>
+
+    </header>
+
+    <div class="popup" id="popup">
+        <div class="overlay"></div>
+        <div class="popup-content">
+            <div class="close-button" onclick="togglePopup()">
+                <i class='bx bx-x' class="icon"></i>
+            </div>
+            <h3 class="popup-title">Book me now</h3>
+            <div class="form-element">
+                <label for="name" class="popup-label">Name:</label><br>
+                <input type="text" required placeholder="Enter name" id="name" class="popup-input">
+            </div>
+            <div class="form-element">
+                <label for="email" class="popup-label">Email:</label><br>
+                <input type="email" required placeholder="Enter email" id="email" class="popup-input">
+            </div>
+            <div class="submit-block"><button class="submit" onclick="checkSucces()">Submit</button></div>
+            <p id="succes"></p>
+        </div>
+    </div>
+
+    <div class="main-block">
+        <div class="follow-me">
+            <h6 class="follow-me-title">Follow me on</h6>
+            <div class="vertical-line"></div>
+            <div class="social-links">
+                <i class='bx bxl-instagram social-link'></i>
+                <i class='bx bxl-facebook social-link'></i>
+                <i class='bx bxl-twitter social-link'></i>
+            </div>
+        </div>
+
+        <div class="main-top">
+            <h1 class="page-title">Escort</h1>
+            <div class="model-nick">
+                <h3 class="model-name">Sam</h3>
+                <h3 class="model-name">Fox</h3>
+            </div>
+            <p class="main-text">Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Nunc id
+            purus ac lorem laoreet egestas in</p>
+        </div>
+        <img src="./images/banner-desk.webp" alt="Beautiful woman" class="banner-desk">
+        <div class="main-bottom">
+            <div class="scroll-down">
+                <a href="#footer" class="scroll-down-title">Scroll down</a>
+                <div class="vertical-line"></div>
+                <div class="long-arrow">&#709;</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="about-info">
+            <h2 class="about-title">ABOUT SAM FOX</h2>
+            <div class="map-working">
+                <div class="location">
+                    <i class='bx bx-map'></i>
+                    <h6 class="location-title">London</h6>
+                </div>
+                <div class="working-time">
+                    <i class='bx bxs-calendar'></i>
+                    <h6 class="working-time-title">23 years</h6>
+                </div>
+            </div>
+            <p class="about-desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. It is a long established
+            fact that a reader will be distracted by the readable content of a page when looking at its layout. The
+            point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+            using 'Content here, content here', making it look like readable.</p>
+            <p class="about-desc">
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour
+            </p>
+            <a href="#header">
+                <button class="book-me-now-button" onclick="togglePopup()">Book Me now <i class='bx bx-chevron-right'></i></button>
+            </a>
+        </div>
+        <div class="about-img-block">
+            <img src="./images/about.webp" alt="Beautiful woman" class="about-img">
+        </div>
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+    </div>
+
+    <div class="services-background">
+        <div class="services-block">
+            <div class="services">
+                <h3 class="services-title">Services</h3>
+                <div class="all-services">
+                    <div class="service">
+                        <div class="service-logo">
+                            <img src="./images/services/travel.svg.png" alt="service logo" class="service-logo-img">
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Travel Companion</h5>
+                            <p class="service-desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.</p>
+                            <p class="service-price">£650 / <span class="hour">hour</span></p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-logo">
+                            <img src="./images/services/intimate.svg fill.png" alt="service logo">
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Intimate Time</h5>
+                            <p class="service-desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.</p>
+                            <p class="service-price">£650 / <span class="hour">hour</span></p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-logo">
+                            <img src="./images/services/sensual.svg fill.png" alt="service logo">
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Sensual Massage</h5>
+                            <p class="service-desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.</p>
+                            <p class="service-price">£650 / <span class="hour">hour</span></p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-logo">
+                            <img src="./images/services/rolPlay.svg fill.png" alt="service logo">
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Role Play</h5>
+                            <p class="service-desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.</p>
+                            <p class="service-price">£650 / <span class="hour">hour</span></p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-logo">
+                            <img src="./images/services/domination.svg fill.png" alt="service logo">
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Domination</h5>
+                            <p class="service-desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.</p>
+                            <p class="service-price">£650 / <span class="hour">hour</span></p>
+                        </div>
+                    </div>
+                    <div class="service">
+                        <div class="service-logo">
+                            <img src="./images/services/girlFriend.svg fill.png" alt="service logo">
+                        </div>
+                        <div class="service-info">
+                            <h5 class="service-title">Girlfriend Experience</h5>
+                            <p class="service-desc">Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry.</p>
+                            <p class="service-price">£650 / <span class="hour">hour</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./images/services-side.webp" alt="Beautiful woman" class="services-side">
+            <div class="service-img-block">
+                <img src="./images/service.webp" alt="Beautiful woman" class="service-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="clients">
+
+        <div class="outline"></div>
+        <div class="quote-img-block">
+            <img src="./images/quote.svg fill.png" alt="quote">
+        </div>
+        
+        <section class="happy-clients">
+        
+            <input checked id="slide1" name="a" type="radio">
+        
+            <div class="quote">
+                <h4 class="happy-clients-title">Happy Client</h4>
+                <blockquote>"There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don't
+                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                    be sure there isn't"</blockquote>
+                <h6 class="client-name">-Robin Nelson</h6>
+            </div>
+        
+        
+            <input id="slide2" name="a" type="radio">
+        
+            <div class="quote">
+                <h4 class="happy-clients-title">Happy Client</h4>
+                <blockquote>"There are many variations of passages of Lorem Ipsum available, but the majority have
+                    suffered alteration in some form, by injected humour, or randomised words which don't
+                    look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                    be sure there isn't"</blockquote>
+                <h6 class="client-name">-Boris Nelson</h6>
+            </div>
+        
+            <input id="slide3" name="a" type="radio">
+        
+            <div class="quote">
+                <h4 class="happy-clients-title">Happy Client</h4>
+                <blockquote>"There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour, or randomised words which don't
+                look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to
+                be sure there isn't"</blockquote>
+                <h6 class="client-name">-John Nelson</h6>
+            </div>
+        
+            <aside>
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+            </aside>
+        </section>
+
+    </div>
+
+    <div class="my-blog">
+        <h2 class="my-blog-title">Read My Blog</h2>
+        <a href="" class="my-blog-more">Read More Blog</a>
+        <div class="blogs">
+            <div class="blog">
+                <img src="./images/blog-1.jpg" alt="Beautiful woman" class="blog-img">
+                <div class="blog-info">
+                    <div class="blog-categories-date">
+                        <div class="blog-categories">
+                            <p class="category">ESCORT</p>
+                            <p class="category">PORN</p>
+                        </div>
+                        <div class="blog-date-block">
+                            <i class='bx bxs-calendar'></i>
+                            <p class="blog-date">September 27, 2022</p>
+                        </div>
+                    </div>
+                    <a href="" class="blog-link">
+                        <i class='bx bx-chevron-right'></i>
+                    </a>
+                </div>
+                <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="blog">
+                <img src="./images/blog-2.jpg" alt="Beautiful woman" class="blog-img">
+                <div class="blog-info">
+                    <div class="blog-categories-date">
+                        <div class="blog-categories">
+                            <p class="category">ESCORT</p>
+                            <p class="category">PORN</p>
+                        </div>
+                        <div class="blog-date-block">
+                            <i class='bx bxs-calendar'></i>
+                            <p class="blog-date">September 27, 2022</p>
+                        </div>
+                    </div>
+                    <a href="" class="blog-link">
+                        <i class='bx bx-chevron-right'></i>
+                    </a>
+                </div>
+                <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+            <div class="blog">
+                <img src="./images/blog-1.jpg" alt="Beautiful woman" class="blog-img">
+                <div class="blog-info">
+                    <div class="blog-categories-date">
+                        <div class="blog-categories">
+                            <p class="category">ESCORT</p>
+                            <p class="category">PORN</p>
+                        </div>
+                        <div class="blog-date-block">
+                            <i class='bx bxs-calendar'></i>
+                            <p class="blog-date">September 27, 2022</p>
+                        </div>
+                    </div>
+                    <a href="" class="blog-link">
+                        <i class='bx bx-chevron-right'></i>
+                    </a>
+                </div>
+                <p class="blog-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="main-footer mobile">
+            <img src="./images/logo.svg.png" alt="Logo">
+            <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit,</p>
+            <div class="footer-socials">
+                <i class='bx bxl-instagram social-link'></i>
+                <i class='bx bxl-facebook social-link'></i>
+                <i class='bx bxl-twitter social-link'></i>
+            </div>
+        </div>
+        <div class="footer-block">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Blog</li>
+                    <li>Services</li>
+                    <li>Booking</li>
+                </ul>
+            </nav>
+            <div class="main-footer pc">
+                <img src="./images/logo.svg.png" alt="Logo">
+                <p class="footer-desc">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit,</p>
+                <div class="footer-socials">
+                    <i class='bx bxl-instagram social-link'></i>
+                    <i class='bx bxl-facebook social-link'></i>
+                    <i class='bx bxl-twitter social-link'></i>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contact tel">
+                    <a href="tel:440123457895" class="contact-icon">
+                        <i class='bx bxs-phone'></i>
+                    </a>
+                    <div class="contact-info">
+                        <h6 class="contact-title">BOOK A TIME</h6>
+                        <a href="tel:440123457895" class="contact-link">44 (01) 2345 7895a</a>
+                    </div>
+                </div>
+                <div class="contact">
+                    <a href="tel:440123457895" class="contact-icon">
+                        <i class='bx bx-envelope'></i>
+                    </a>
+                    <div class="contact-info">
+                        <h6 class="contact-title">EMAIL ID</h6>
+                        <a href="tel:440123457895" class="contact-link">demo@logomane.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./popup.js"></script>
+</body>
+</html>
